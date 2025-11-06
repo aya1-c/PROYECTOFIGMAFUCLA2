@@ -4,15 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NoticiasElectiva - Naturaleza</title>
-  <link rel="stylesheet" href="../styles/vars.css">
-  <link rel="stylesheet" href="../styles/style.css">
+  <!-- <link rel="stylesheet" href="../styles/styles2.css"> -->
+  <link rel="stylesheet" href="../styles/style2.css">
 </head>
 <body>
 
   <!-- Encabezado -->
   <header class="header">
     <div class="logo">
-      <a href="../index.html"><img src="../logo.png" alt="NoticiasElectiva"></a>
+      <a href="../index.html"><img src="../images/logo.png" alt="NoticiasElectiva"></a>
     </div>
     <nav class="nav">
       <ul>
@@ -25,81 +25,82 @@
     <div class="hora" id="hora"></div>
   </header>
 
-  <!-- Contenedor principal -->
-  <main class="main">
-    <aside class="sidebar">
-      <h3>Temas ambientales</h3>
-      <ul>
-        <li>Conservación de ecosistemas</li>
-        <li>Proyectos de energía limpia</li>
-        <li>Protección de fauna silvestre</li>
-        <li>Reforestación comunitaria</li>
-      </ul>
-    </aside>
-
-    <section class="contenido">
-      <h2>#CuidemosElPlaneta</h2>
-      <div class="tags">
-        <button>#MedioAmbiente</button>
-        <button>#EnergíaRenovable</button>
-        <button>#Biodiversidad</button>
+  <main class="contenedor">
+    <section class="principal">
+      <h2>#LoÚltimoEnLaNaturaleza</h2>
+      <div class="noticia-destacada">
+        <img src="../images/ele1.png"  alt="titular">
+        <div class="texto-destacado">
+          <h3>Titular</h3>
+          <span>29/10/2025</span>
+          <p>Este fenómeno ocurre en la cuenca del Lago de Maracaibo, Venezuela: tormentas de relámpagos
+             tan intensas que pueden ocurrir hasta 260 noches al año.</p>
+        </div>
       </div>
 
-      <article class="noticia-principal">
-        <img src="https://choco7dias.com/wp-content/uploads/2023/12/iiap-2040.jpg" alt="Naturaleza principal">
-        <div class="texto">
-          <h3>Proyectos de conservación transforman el Chocó</h3>
-          <span class="fecha">27 de Octubre 2025</span>
-          <p>Iniciativas lideradas por comunidades locales han protegido ríos, selvas y especies en peligro,
-             mostrando un modelo sostenible de desarrollo regional.</p>
-        </div>
-      </article>
-
-      <div class="noticias-secundarias">
-        <div class="noticia-card">
-          <img src="https://www.buenaventura.gov.co/media/img/20230727_papayo.jpeg" alt="">
-          <div class="texto-card">
-            <h4>Reforestación costera en Buenaventura</h4>
-            <span>23 / 10 / 2025</span>
-            <p>Se plantaron miles de manglares para mitigar la erosión y preservar hábitats marinos.</p>
+      <div class="bloques-inferiores">
+        <div class="bloque">
+          <img src="../images/ele2.png" alt="Noticia 1">
+          <div class="texto-bloque">
+            <h4>Título: Bioluminiscencia marina (Playas que brillan en la noche)</h4>
+            <span>29/10/2025</span>
+            <p>En ciertos lugares como la isla Vieques en Puerto Rico y otros destinos, microorganismos en el agua emiten
+             luz cuando se agitan, lo que produce un efecto de “agua con estrellas”.</p>
           </div>
         </div>
 
-        <div class="noticia-card">
-          <img src="https://vanguardiavenezuela.com/wp-content/uploads/2025/06/Tangara-Enmascarada.jpg" alt="">
-          <div class="texto-card">
-            <h4>Descubren nueva especie de ave en la selva Amazónica</h4>
-            <span>20 / 10 / 2025</span>
-            <p>Investigadores registran una ave nunca antes documentada, reforzando la riqueza biológica de la región.</p>
+        <div class="bloque">
+          <img src="../images/ele3.jpg" alt="Noticia 2">
+          <div class="texto-bloque">
+            <h4>Titulo: Blood Falls (La catarata que parece sangre en la Antártida)</h4>
+            <span>29/10/2025</span>
+            <p>Esta catarata en la Antártida parece derramar sangre, pero la explicación es geológica: agua rica
+               en hierro que al contactarse con el aire se oxida toma un color rojo-intenso.</p>
+          </div>
+        </div>
+
+        <div class="bloque">
+          <img src="../images/ele4.jpg" alt="Noticia 3">
+          <div class="texto-bloque">
+            <h4>Titular</h4>
+            <span>29/10/2025</span>
           </div>
         </div>
       </div>
     </section>
 
     <aside class="publicidad">
-      <h4>Publicidad</h4>
-      <img src="https://images.squarespace-cdn.com/content/v1/5526d0eee4b040480263ea62/1587503026683-VE0TBJVUXX7K39VAEES9/NEWSLETTER+IDEA+-+ABR2020+%281%29+57.jpeg" alt="Publicidad 1">
-      <img src="https://www.idipron.gov.co/sites/default/files/BeneficiariosLaFlorida5.jpeg" alt="Publicidad 2">
+      <h3>Publicidad</h3>
+      <img src="../images/publi2.jpg" alt="Publicidad">
     </aside>
   </main>
 
-  <script>
-    function actualizarHora() {
-      const ahora = new Date();
-      const horaElemento = document.getElementById("hora");
-      const opcionesFecha = { day: "numeric", month: "long" };
-      const fecha = ahora.toLocaleDateString("es-ES", opcionesFecha);
-      const hora = ahora.toLocaleTimeString("es-ES", {
-        hour: "2-digit",
-        minute: "2-digit",
-        second: "2-digit",
-        hour12: true
-      });
-      horaElemento.textContent = `${fecha} | ${hora}`;
-    }
-    setInterval(actualizarHora, 1000);
-    actualizarHora();
-  </script>
+  <footer>
+    <p>© 2025 NoticiasElectiva2 | Sección Naturaleza</p>
+  </footer>
+</body></html>
+<script>
+  function actualizarHora() {
+    const ahora = new Date();
+    const horaElemento = document.getElementById("hora");
 
-</body>
-</html>
+    // Opciones para mostrar el nombre del mes y formato en español
+    const opcionesFecha = { day: "numeric", month: "long" };
+    const fecha = ahora.toLocaleDateString("es-ES", opcionesFecha);
+
+    // Hora con dos dígitos
+    const hora = ahora.toLocaleTimeString("es-ES", {
+      hour: "2-digit",
+      minute: "2-digit",
+      second: "2-digit",
+      hour12: true
+    });
+
+    // Mostrar fecha + hora
+    horaElemento.textContent = `${fecha} | ${hora}`;
+  }
+
+  // Actualizar cada segundo
+  setInterval(actualizarHora, 1000);
+  actualizarHora();
+</script>

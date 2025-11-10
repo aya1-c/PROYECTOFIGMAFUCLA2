@@ -4,14 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NoticiasElectiva - Naturaleza</title>
-  <!-- <link rel="stylesheet" href="../styles/styles2.css"> -->
-  <link rel="stylesheet" href="../styles/style2.css">
+  <link rel="stylesheet" href="../styles/vars.css">
+  <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
 
   <!-- Encabezado -->
   <header class="header">
-<<<<<<< HEAD
     <div class="logo">
       <a href="../index.html"><img src="../images/logo.png" alt="NoticiasElectiva"></a>
     </div>
@@ -25,98 +24,96 @@
     </nav>
     <div class="hora" id="hora"></div>
   </header>
-=======
-  <div class="logo">
-    <a href="../index.html"><img src="../images/logo.png" alt="NoticiasElectiva"></a>
-  </div>
-  <nav class="nav">
-    <ul>
-      <li><a href="salud.html">Salud</a></li>
-      <li><a href="deporte.html" class="activo">Deportes</a></li>
-      <li><a href="tecnologia.html">Tecnología</a></li>
-      <li><a href="naturaleza.html">Naturaleza</a></li>
-    </ul>
-  </nav>
-  <div class="hora" id="hora"></div>
-</header>
->>>>>>> 70492978b799e88a32a96ae33432973a585477dc
 
-  <main class="contenedor">
-    <section class="principal">
+  <!-- Contenido principal -->
+  <main class="main">
+    <aside class="sidebar">
+      <h3>Temas recientes</h3>
+      <ul>
+        <li>Fenómenos naturales impresionantes</li>
+        <li>Fauna en peligro de extinción</li>
+        <li>Iniciativas ecológicas</li>
+        <li>Cambio climático y medio ambiente</li>
+      </ul>
+    </aside>
+
+    <section class="contenido">
       <h2>#LoÚltimoEnLaNaturaleza</h2>
-      <div class="noticia-destacada">
-        <img src="../images/ele1.png"  alt="titular">
-        <div class="texto-destacado">
-          <h3>Titular</h3>
-          <span>29/10/2025</span>
-          <p>Este fenómeno ocurre en la cuenca del Lago de Maracaibo, Venezuela: tormentas de relámpagos
-             tan intensas que pueden ocurrir hasta 260 noches al año.</p>
-        </div>
+      <div class="tags">
+        <button>#EnergíaVerde</button>
+        <button>#Clima</button>
+        <button>#Biodiversidad</button>
       </div>
 
-      <div class="bloques-inferiores">
-        <div class="bloque">
-          <img src="../images/ele2.png" alt="Noticia 1">
-          <div class="texto-bloque">
-            <h4>Título: Bioluminiscencia marina (Playas que brillan en la noche)</h4>
-            <span>29/10/2025</span>
-            <p>En ciertos lugares como la isla Vieques en Puerto Rico y otros destinos, microorganismos en el agua emiten
-             luz cuando se agitan, lo que produce un efecto de “agua con estrellas”.</p>
+      <article class="noticia-principal">
+        <img src="../images/ele1.png" alt="titular">
+        <div class="texto">
+          <h3>Relámpagos del Catatumbo: el espectáculo natural eterno</h3>
+          <span class="fecha">29 de Octubre 2025</span>
+          <p>Este fenómeno ocurre en la cuenca del Lago de Maracaibo, Venezuela, donde las tormentas eléctricas 
+          pueden durar hasta 260 noches al año, siendo uno de los fenómenos más impresionantes del planeta.</p>
+        </div>
+      </article>
+
+      <div class="noticias-secundarias">
+        <div class="noticia-card">
+          <img src="../images/ele2.png" alt="Bioluminiscencia marina">
+          <div class="texto-card">
+            <h4>Playas que brillan en la noche: bioluminiscencia marina</h4>
+            <span>29 / 10 / 2025</span>
+            <p>En lugares como la isla Vieques, microorganismos marinos emiten luz al moverse, creando paisajes
+            que parecen sacados de un sueño.</p>
           </div>
         </div>
 
-        <div class="bloque">
-          <img src="../images/ele3.jpg" alt="Noticia 2">
-          <div class="texto-bloque">
-            <h4>Titulo: Blood Falls (La catarata que parece sangre en la Antártida)</h4>
-            <span>29/10/2025</span>
-            <p>Esta catarata en la Antártida parece derramar sangre, pero la explicación es geológica: agua rica
-               en hierro que al contactarse con el aire se oxida toma un color rojo-intenso.</p>
+        <div class="noticia-card">
+          <img src="../images/ele3.jpg" alt="Blood Falls">
+          <div class="texto-card">
+            <h4>La catarata roja de la Antártida: el misterio de Blood Falls</h4>
+            <span>29 / 10 / 2025</span>
+            <p>El color rojizo del agua proviene del hierro oxidado, no de sangre como muchos creen. 
+            Un ejemplo sorprendente de la química natural.</p>
           </div>
         </div>
 
-        <div class="bloque">
-          <img src="../images/ele4.jpg" alt="Noticia 3">
-          <div class="texto-bloque">
-            <h4>Titular</h4>
-            <span>29/10/2025</span>
+        <div class="noticia-card">
+          <img src="../images/ele4.jpg" alt="Naturaleza">
+          <div class="texto-card">
+            <h4>Explorando ecosistemas únicos</h4>
+            <span>29 / 10 / 2025</span>
+            <p>Conoce los lugares donde la naturaleza aún conserva su equilibrio y pureza.</p>
           </div>
         </div>
       </div>
     </section>
 
     <aside class="publicidad">
-      <h3>Publicidad</h3>
+      <h4>Publicidad</h4>
       <img src="../images/publi2.jpg" alt="Publicidad">
+      <img src="https://espnpressroom.com/latinamerica/files/2025/09/NFL-Septiembre.jpg" alt="Publicidad 2">
     </aside>
   </main>
 
-  <footer>
-    <p>© 2025 NoticiasElectiva2 | Sección Naturaleza</p>
-  </footer>
-</body></html>
-<script>
-  function actualizarHora() {
-    const ahora = new Date();
-    const horaElemento = document.getElementById("hora");
+  <script>
+    function actualizarHora() {
+      const ahora = new Date();
+      const horaElemento = document.getElementById("hora");
 
-    // Opciones para mostrar el nombre del mes y formato en español
-    const opcionesFecha = { day: "numeric", month: "long" };
-    const fecha = ahora.toLocaleDateString("es-ES", opcionesFecha);
+      const opcionesFecha = { day: "numeric", month: "long" };
+      const fecha = ahora.toLocaleDateString("es-ES", opcionesFecha);
+      const hora = ahora.toLocaleTimeString("es-ES", {
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+        hour12: true
+      });
 
-    // Hora con dos dígitos
-    const hora = ahora.toLocaleTimeString("es-ES", {
-      hour: "2-digit",
-      minute: "2-digit",
-      second: "2-digit",
-      hour12: true
-    });
+      horaElemento.textContent = `${fecha} | ${hora}`;
+    }
 
-    // Mostrar fecha + hora
-    horaElemento.textContent = `${fecha} | ${hora}`;
-  }
+    setInterval(actualizarHora, 1000);
+    actualizarHora();
+  </script>
 
-  // Actualizar cada segundo
-  setInterval(actualizarHora, 1000);
-  actualizarHora();
-</script>
+</body>
+</html>

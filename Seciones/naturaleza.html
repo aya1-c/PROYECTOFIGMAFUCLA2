@@ -12,7 +12,7 @@
   <!-- Encabezado -->
   <header class="header">
     <div class="logo">
-      <a href="../index.html"><img src="../logo.png" alt="NoticiasElectiva"></a>
+      <a href="../index.html"><img src="../images/logo.png" alt="NoticiasElectiva"></a>
     </div>
     <nav class="nav">
       <ul>
@@ -26,52 +26,63 @@
     <div class="hora" id="hora"></div>
   </header>
 
-  <!-- Contenedor principal -->
+  <!-- Contenido principal -->
   <main class="main">
     <aside class="sidebar">
-      <h3>Temas ambientales</h3>
+      <h3>Temas recientes</h3>
       <ul>
-        <li>Conservación de ecosistemas</li>
-        <li>Proyectos de energía limpia</li>
-        <li>Protección de fauna silvestre</li>
-        <li>Reforestación comunitaria</li>
+        <li>Fenómenos naturales impresionantes</li>
+        <li>Fauna en peligro de extinción</li>
+        <li>Iniciativas ecológicas</li>
+        <li>Cambio climático y medio ambiente</li>
       </ul>
     </aside>
 
     <section class="contenido">
-      <h2>#CuidemosElPlaneta</h2>
+      <h2>#LoÚltimoEnLaNaturaleza</h2>
       <div class="tags">
-        <button>#MedioAmbiente</button>
-        <button>#EnergíaRenovable</button>
+        <button>#EnergíaVerde</button>
+        <button>#Clima</button>
         <button>#Biodiversidad</button>
       </div>
 
       <article class="noticia-principal">
-        <img src="https://choco7dias.com/wp-content/uploads/2023/12/iiap-2040.jpg" alt="Naturaleza principal">
+        <img src="../images/ele1.png" alt="titular">
         <div class="texto">
-          <h3>Proyectos de conservación transforman el Chocó</h3>
-          <span class="fecha">27 de Octubre 2025</span>
-          <p>Iniciativas lideradas por comunidades locales han protegido ríos, selvas y especies en peligro,
-             mostrando un modelo sostenible de desarrollo regional.</p>
+          <h3>Relámpagos del Catatumbo: el espectáculo natural eterno</h3>
+          <span class="fecha">29 de Octubre 2025</span>
+          <p>Este fenómeno ocurre en la cuenca del Lago de Maracaibo, Venezuela, donde las tormentas eléctricas 
+          pueden durar hasta 260 noches al año, siendo uno de los fenómenos más impresionantes del planeta.</p>
         </div>
       </article>
 
       <div class="noticias-secundarias">
         <div class="noticia-card">
-          <img src="https://www.buenaventura.gov.co/media/img/20230727_papayo.jpeg" alt="">
+          <img src="../images/ele2.png" alt="Bioluminiscencia marina">
           <div class="texto-card">
-            <h4>Reforestación costera en Buenaventura</h4>
-            <span>23 / 10 / 2025</span>
-            <p>Se plantaron miles de manglares para mitigar la erosión y preservar hábitats marinos.</p>
+            <h4>Playas que brillan en la noche: bioluminiscencia marina</h4>
+            <span>29 / 10 / 2025</span>
+            <p>En lugares como la isla Vieques, microorganismos marinos emiten luz al moverse, creando paisajes
+            que parecen sacados de un sueño.</p>
           </div>
         </div>
 
         <div class="noticia-card">
-          <img src="https://vanguardiavenezuela.com/wp-content/uploads/2025/06/Tangara-Enmascarada.jpg" alt="">
+          <img src="../images/ele3.jpg" alt="Blood Falls">
           <div class="texto-card">
-            <h4>Descubren nueva especie de ave en la selva Amazónica</h4>
-            <span>20 / 10 / 2025</span>
-            <p>Investigadores registran una ave nunca antes documentada, reforzando la riqueza biológica de la región.</p>
+            <h4>La catarata roja de la Antártida: el misterio de Blood Falls</h4>
+            <span>29 / 10 / 2025</span>
+            <p>El color rojizo del agua proviene del hierro oxidado, no de sangre como muchos creen. 
+            Un ejemplo sorprendente de la química natural.</p>
+          </div>
+        </div>
+
+        <div class="noticia-card">
+          <img src="../images/ele4.jpg" alt="Naturaleza">
+          <div class="texto-card">
+            <h4>Explorando ecosistemas únicos</h4>
+            <span>29 / 10 / 2025</span>
+            <p>Conoce los lugares donde la naturaleza aún conserva su equilibrio y pureza.</p>
           </div>
         </div>
       </div>
@@ -79,8 +90,8 @@
 
     <aside class="publicidad">
       <h4>Publicidad</h4>
-      <img src="https://images.squarespace-cdn.com/content/v1/5526d0eee4b040480263ea62/1587503026683-VE0TBJVUXX7K39VAEES9/NEWSLETTER+IDEA+-+ABR2020+%281%29+57.jpeg" alt="Publicidad 1">
-      <img src="https://www.idipron.gov.co/sites/default/files/BeneficiariosLaFlorida5.jpeg" alt="Publicidad 2">
+      <img src="../images/publi2.jpg" alt="Publicidad">
+      <img src="https://espnpressroom.com/latinamerica/files/2025/09/NFL-Septiembre.jpg" alt="Publicidad 2">
     </aside>
   </main>
 
@@ -88,6 +99,7 @@
     function actualizarHora() {
       const ahora = new Date();
       const horaElemento = document.getElementById("hora");
+
       const opcionesFecha = { day: "numeric", month: "long" };
       const fecha = ahora.toLocaleDateString("es-ES", opcionesFecha);
       const hora = ahora.toLocaleTimeString("es-ES", {
@@ -96,8 +108,10 @@
         second: "2-digit",
         hour12: true
       });
+
       horaElemento.textContent = `${fecha} | ${hora}`;
     }
+
     setInterval(actualizarHora, 1000);
     actualizarHora();
   </script>

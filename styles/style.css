@@ -37,6 +37,31 @@ body {
   color: var(--color-negro);
   font-weight: bold;
 }
+nav a {
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 4px;
+    transition: color .3s;
+}
+
+nav a:hover {
+    color: #27ae60;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background: #27ae60;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
 
 .hora {
   background-color: var(--color-primario);
@@ -281,4 +306,24 @@ body {
 .dark-mode .noticia-card {
   background-color: #222;
   color: white;
+}
+/* Mejora visual: más espaciado entre elementos */
+section, article {
+    margin-bottom: 25px;
+}
+
+/* Más espacio dentro de las tarjetas */
+.card, .noticia, .noticia-principal, .noticia-secundaria {
+    padding: 20px;
+}
+
+/* Separación entre columnas laterales y contenido */
+.main-content {
+    padding: 0 30px;
+}
+
+/* Separación entre imágenes de publicidad */
+.publicidad img {
+    margin-bottom: 25px;
+    border-radius: 8px;
 }

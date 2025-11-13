@@ -24,6 +24,7 @@
         <li><a href="naturaleza.html">Naturaleza</a></li>
       </ul>
     </nav>
+        <button id="modo-oscuro-toggle">🌙</button>
     <div class="hora" id="hora"></div>
   </header>
 
@@ -102,6 +103,35 @@
     setInterval(actualizarHora, 1000);
     actualizarHora();
   </script>
-<script src="scripts/darkmode.js"></script>
+<script src="../darkmode.js"></script>
+<script>
+(function(){
+  let boton = document.getElementById('modo-oscuro-toggle');
+  if (!boton) {
+    const header = document.querySelector('header.header') || document.querySelector('header') || document.body;
+    boton = document.createElement('button');
+    boton.id = 'modo-oscuro-toggle';
+    boton.className = 'modo-btn';
+    boton.textContent = '🌙';
+    if (header) header.appendChild(boton);
+  }
+
+  try {
+    const theme = localStorage.getItem('theme');
+    if (theme === 'dark') {
+      document.body.classList.add('dark');
+      boton.textContent = '☀️';
+    }
+  } catch (e) { console.warn('localStorage read error', e); }
+
+  boton.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    const activo = document.body.classList.contains('dark');
+    try { localStorage.setItem('theme', activo ? 'dark' : 'light'); } catch(e){ console.warn('localStorage write error', e); }
+    boton.textContent = activo ? '☀️' : '🌙';
+  });
+})();
+</script>
+
 </body>
 </html>

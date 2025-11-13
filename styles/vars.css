@@ -16,3 +16,35 @@
     --tam-texto: 1rem;
     --tam-seccion: 0.9rem;
 }
+
+/* === BOTÓN MODO OSCURO === */
+#modo-oscuro-toggle {
+  position: absolute;
+  top: 14x;
+  right: 400px;
+  background: #e0e0e0;
+  border: none;
+  color: #222;
+  font-size: 1.2rem;
+  padding: 8px 12px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+#modo-oscuro-toggle:hover {
+  background: #d6d6d6;
+  transform: scale(1.05);
+}
+
+/* Estilo cuando el modo oscuro está activo */
+body.dark #modo-oscuro-toggle {
+  background: #333;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+body.dark #modo-oscuro-toggle:hover {
+  background: #444;
+}

@@ -327,3 +327,103 @@ section, article {
     margin-bottom: 25px;
     border-radius: 8px;
 }
+/* ========================== */
+/*       MODO OSCURO          */
+/* ========================== */
+
+body.dark {
+  background-color: #1a1a1a;
+  color: #e6e6e6;
+}
+
+/* Tarjetas, contenedores, laterales */
+body.dark .sidebar,
+body.dark .noticia-principal,
+body.dark .noticia-card,
+body.dark .publicidad {
+  background-color: #2a2a2a;
+  box-shadow: none;
+  color: #e6e6e6;
+}
+
+/* Títulos */
+body.dark h2,
+body.dark h3,
+body.dark h4 {
+  color: #fafafa;
+}
+
+/* Fecha */
+body.dark .fecha,
+body.dark .texto-card span {
+  color: #bbbbbb;
+}
+
+/* Botones tendencia */
+body.dark .tags button {
+  background-color: #4c4c4c;
+}
+
+/* Header */
+body.dark .header {
+  background-color: #2a2a2a;
+}
+
+/* Cambiar publicidad */
+body.dark .publicidad img {
+  filter: brightness(0.8) contrast(1.1);
+}
+
+/* Botón modo */
+.modo-btn {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* === MODO OSCURO: ESTÉTICA Y LEGIBILIDAD === */
+body.dark {
+  background-color: #121212;
+  color: #f5f5f5;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* Ajusta texto de títulos y párrafos */
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5,
+body.dark h6,
+body.dark p,
+body.dark a,
+body.dark li,
+body.dark span {
+  color: #ffffff !important;
+}
+
+/* Tarjetas, secciones, y paneles */
+body.dark .noticia-card,
+body.dark .noticia-principal,
+body.dark .sidebar,
+body.dark .temas,
+body.dark .header,
+body.dark .footer {
+  background-color: #1e1e1e;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+/* Etiquetas o hashtags */
+body.dark .tag {
+  background-color: #333;
+  color: #f5f5f5;
+  border: 1px solid #555;
+}
+
+/* Links al pasar el mouse */
+body.dark a:hover {
+  color: #00bcd4;
+}
